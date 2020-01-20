@@ -1,0 +1,18 @@
+#holder {
+    font-family: 'IM Fell Great Primer SC', serif;
+    width: 75%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 40%;
+}
+
+#title {
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+#moral {
+    font-size: 1.2em;
+    font-style: italic;
+}

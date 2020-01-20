@@ -12,10 +12,6 @@ data = {
     "morals" : []
 }
 
-# TODO:
-#   - Put adjectives (JJ), nouns (NN), and possesive pronouns (PRP$) into different lists
-#   - Serialize the data then write a generator in js or something
-
 def remove_duplicates(a):
     return list(dict.fromkeys(a))
 
@@ -40,6 +36,6 @@ data["nouns"] = remove_duplicates(data["nouns"])
 data["pronouns"] = remove_duplicates(data["pronouns"])
 data["morals"] = remove_duplicates(data["morals"])
 
-write_file = open("data.json", "w")
-write_file.write(json.dumps(data))
+write_file = open("data.js", "w")
+write_file.write("var data = " + json.dumps(data) + ";")
 write_file.close()
