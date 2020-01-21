@@ -1,5 +1,5 @@
-const adjProb = 50; // Percentage (out of 100) that an adjective will be applied
-const proProb = 1; // Percentage (out of 100) that a pronoun will be applied
+const adjProb = 50; // Probability (out of 100) that an adjective will be applied
+const proProb = 1; // Probability (out of 100) that a pronoun will be applied
 
 var titleEl = document.getElementById("title");
 var moralEl = document.getElementById("moral");
