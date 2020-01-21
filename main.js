@@ -37,4 +37,10 @@ function getPronoun() {
     return Math.floor(Math.random() * 100) <= proProb ? data["pronouns"][Math.floor(Math.random() * data["pronouns"].length)] + " " : "the ";
 }
 
+document.addEventListener("keydown", event => {
+    if (event.keyCode == 32) { // Space
+        generate();
+    }
+});
+
 generate();
